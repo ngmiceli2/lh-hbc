@@ -12,7 +12,7 @@
 - [x] Task: Conductor - User Manual Verification 'Infrastructure & Scaffolding' (Protocol in workflow.md) [1c1dc8c]
 
 ## Phase 2: Authentication & Core UI
-- [x] Task: Implement Authentication [620b33d]
+- [x] Task: Implement Authentication [8e62be3]
     - [ ] Create Sign-up and Login views using Supabase Auth.
     - [ ] Implement protected routes for student/teacher areas.
 - [x] Task: Basic Layout & Navigation [e5191fb]
