@@ -27,6 +27,16 @@ const router = createRouter({
           path: 'dashboard',
           name: 'Dashboard',
           component: () => import('../views/Dashboard.vue')
+        },
+        {
+          path: 'log-book',
+          name: 'BookSearch',
+          component: () => import('../views/BookSearch.vue')
+        },
+        {
+          path: 'log-entry',
+          name: 'LogEntry',
+          component: () => import('../views/LogEntry.vue')
         }
       ]
     }
