@@ -23,7 +23,7 @@
 - [x] Task: Book Search & Selection [5253a5d]
     - [ ] Implement search interface using Open Library API.
     - [ ] Allow users to select a book and view basic metadata.
-- [ ] Task: Log Entry Implementation
+- [~] Task: Log Entry Implementation
     - [ ] Create form to log a reading session (date, page count).
     - [ ] Persist log entries to the `reading_logs` table in Supabase.
 - [ ] Task: Conductor - User Manual Verification 'MVP Logging Feature' (Protocol in workflow.md)

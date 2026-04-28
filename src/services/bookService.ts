@@ -1,3 +1,5 @@
+import { supabase } from '../lib/supabase'
+
 export interface BookMetadata {
   id: string
   title: string
@@ -31,5 +33,19 @@ export const bookService = {
       author: 'Unknown', // Works API doesn't include author name directly, would need another call
       cover_url: data.covers ? `https://covers.openlibrary.org/b/id/${data.covers[0]}-M.jpg` : undefined,
     }
+  },
+
+  async saveBook(book: BookMetadata) {
+    const { data, error } = await supabase
+      .from('books')
+      .upsert({
+        id: book.id,
+        title: book.title,
+        author: book.author,
+        cover_url: book.cover_url,
+        page_count: book.page_count
+      })
+      .select()
+    return { data: data ? data[0] : null, error }
   }
 }
