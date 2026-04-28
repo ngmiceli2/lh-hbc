@@ -20,7 +20,7 @@
 - [x] Task: Conductor - User Manual Verification 'Authentication & Core UI' (Protocol in workflow.md) [1b6a908]
 
 ## Phase 3: MVP Logging Feature
-- [~] Task: Book Search & Selection
+- [x] Task: Book Search & Selection [5253a5d]
     - [ ] Implement search interface using Open Library API.
     - [ ] Allow users to select a book and view basic metadata.
 - [ ] Task: Log Entry Implementation
