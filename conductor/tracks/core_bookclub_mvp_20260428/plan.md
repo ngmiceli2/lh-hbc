@@ -19,14 +19,14 @@
     - [ ] Set up the main application shell and navigation for both roles.
 - [x] Task: Conductor - User Manual Verification 'Authentication & Core UI' (Protocol in workflow.md) [1b6a908]
 
-## Phase 3: MVP Logging Feature
+## Phase 3: MVP Logging Feature [checkpoint: ae40e41]
 - [x] Task: Book Search & Selection [5253a5d]
     - [ ] Implement search interface using Open Library API.
     - [ ] Allow users to select a book and view basic metadata.
 - [x] Task: Log Entry Implementation [cfbcf7f]
     - [ ] Create form to log a reading session (date, page count).
     - [ ] Persist log entries to the `reading_logs` table in Supabase.
-- [ ] Task: Conductor - User Manual Verification 'MVP Logging Feature' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'MVP Logging Feature' (Protocol in workflow.md) [ae40e41]
 
 ## Phase 4: Initial Teacher Dashboard
 - [ ] Task: Dashboard Skeleton
