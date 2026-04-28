@@ -1,7 +1,7 @@
 # Implementation Plan: Core Bookclub Infrastructure & MVP Logging
 
 ## Phase 1: Infrastructure & Scaffolding
-- [~] Task: Project Initialisation
+- [x] Task: Project Initialisation [398615b]
     - [ ] Set up Vue.js project with TypeScript.
     - [ ] Configure Supabase project and client-side integration.
 - [ ] Task: Database Schema Definition
