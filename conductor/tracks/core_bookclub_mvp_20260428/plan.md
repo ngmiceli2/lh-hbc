@@ -11,13 +11,13 @@
     - [ ] Create `reading_logs` table to track progress.
 - [x] Task: Conductor - User Manual Verification 'Infrastructure & Scaffolding' (Protocol in workflow.md) [1c1dc8c]
 
-## Phase 2: Authentication & Core UI
+## Phase 2: Authentication & Core UI [checkpoint: 1b6a908]
 - [x] Task: Implement Authentication [8e62be3]
     - [ ] Create Sign-up and Login views using Supabase Auth.
     - [ ] Implement protected routes for student/teacher areas.
 - [x] Task: Basic Layout & Navigation [e5191fb]
     - [ ] Set up the main application shell and navigation for both roles.
-- [~] Task: Conductor - User Manual Verification 'Authentication & Core UI' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Authentication & Core UI' (Protocol in workflow.md) [1b6a908]
 
 ## Phase 3: MVP Logging Feature
 - [ ] Task: Book Search & Selection
