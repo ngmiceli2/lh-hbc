@@ -29,6 +29,11 @@ const router = createRouter({
           component: () => import('../views/Dashboard.vue')
         },
         {
+          path: 'teacher-dashboard',
+          name: 'TeacherDashboard',
+          component: () => import('../views/TeacherDashboard.vue')
+        },
+        {
           path: 'log-book',
           name: 'BookSearch',
           component: () => import('../views/BookSearch.vue')

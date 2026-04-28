@@ -29,7 +29,7 @@
 - [x] Task: Conductor - User Manual Verification 'MVP Logging Feature' (Protocol in workflow.md) [ae40e41]
 
 ## Phase 4: Initial Teacher Dashboard
-- [ ] Task: Dashboard Skeleton
+- [~] Task: Dashboard Skeleton
     - [ ] Create a view for teachers to see all students in a mock class.
 - [ ] Task: Simple Data Aggregation
     - [ ] Display basic totals (total books/pages) per student in the dashboard.

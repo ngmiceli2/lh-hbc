@@ -3,7 +3,7 @@
     <nav class="navbar">
       <div class="nav-brand">Bookclub Manager</div>
       <div class="nav-links">
-        <router-link to="/dashboard">Dashboard</router-link>
+        <router-link :to="role === 'teacher' ? '/teacher-dashboard' : '/dashboard'">Dashboard</router-link>
         <router-link v-if="role === 'student'" to="/log-book">Log a Book</router-link>
         <button @click="handleSignOut">Sign Out</button>
       </div>
