@@ -15,7 +15,7 @@
 - [x] Task: Implement Authentication [620b33d]
     - [ ] Create Sign-up and Login views using Supabase Auth.
     - [ ] Implement protected routes for student/teacher areas.
-- [ ] Task: Basic Layout & Navigation
+- [~] Task: Basic Layout & Navigation
     - [ ] Set up the main application shell and navigation for both roles.
 - [ ] Task: Conductor - User Manual Verification 'Authentication & Core UI' (Protocol in workflow.md)
 
