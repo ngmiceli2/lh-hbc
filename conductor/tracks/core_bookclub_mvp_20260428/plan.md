@@ -1,6 +1,6 @@
 # Implementation Plan: Core Bookclub Infrastructure & MVP Logging
 
-## Phase 1: Infrastructure & Scaffolding
+## Phase 1: Infrastructure & Scaffolding [checkpoint: 1c1dc8c]
 - [x] Task: Project Initialisation [398615b]
     - [ ] Set up Vue.js project with TypeScript.
     - [ ] Configure Supabase project and client-side integration.
@@ -9,7 +9,7 @@
     - [ ] Create `classes` table for managing student groups.
     - [ ] Create `books` table for cached book metadata.
     - [ ] Create `reading_logs` table to track progress.
-- [ ] Task: Conductor - User Manual Verification 'Infrastructure & Scaffolding' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Infrastructure & Scaffolding' (Protocol in workflow.md) [1c1dc8c]
 
 ## Phase 2: Authentication & Core UI
 - [ ] Task: Implement Authentication
