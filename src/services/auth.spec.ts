@@ -7,6 +7,7 @@ vi.mock('../lib/supabase', () => ({
     auth: {
       signUp: vi.fn(),
       signInWithPassword: vi.fn(),
+      signInWithOAuth: vi.fn(),
       signOut: vi.fn(),
       getSession: vi.fn()
     }
@@ -48,5 +49,23 @@ describe('AuthService', () => {
       password: 'password'
     })
     expect(result.data).toEqual(mockData)
+  })
+
+  it('should call signInWithOAuth for Google', async () => {
+    vi.mocked(supabase.auth.signInWithOAuth).mockResolvedValue({ data: {}, error: null } as any)
+    await authService.signInWithGoogle()
+    expect(supabase.auth.signInWithOAuth).toHaveBeenCalledWith({
+      provider: 'google',
+      options: expect.anything()
+    })
+  })
+
+  it('should call signInWithOAuth for Facebook', async () => {
+    vi.mocked(supabase.auth.signInWithOAuth).mockResolvedValue({ data: {}, error: null } as any)
+    await authService.signInWithFacebook()
+    expect(supabase.auth.signInWithOAuth).toHaveBeenCalledWith({
+      provider: 'facebook',
+      options: expect.anything()
+    })
   })
 })

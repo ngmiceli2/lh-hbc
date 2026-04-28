@@ -17,7 +17,7 @@
     - [ ] Implement protected routes for student/teacher areas.
 - [x] Task: Basic Layout & Navigation [e5191fb]
     - [ ] Set up the main application shell and navigation for both roles.
-- [ ] Task: Conductor - User Manual Verification 'Authentication & Core UI' (Protocol in workflow.md)
+- [~] Task: Conductor - User Manual Verification 'Authentication & Core UI' (Protocol in workflow.md)
 
 ## Phase 3: MVP Logging Feature
 - [ ] Task: Book Search & Selection
