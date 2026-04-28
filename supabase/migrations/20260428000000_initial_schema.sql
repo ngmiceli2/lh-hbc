@@ -56,6 +56,8 @@ CREATE POLICY "Users can update own profile" ON public.profiles FOR UPDATE USING
 CREATE POLICY "Classes are viewable by enrolled students and teachers" ON public.classes FOR SELECT USING (true); -- Simplified for MVP
 
 CREATE POLICY "Books are viewable by everyone" ON public.books FOR SELECT USING (true);
+CREATE POLICY "Anyone can insert books" ON public.books FOR INSERT WITH CHECK (true);
+CREATE POLICY "Anyone can update books" ON public.books FOR UPDATE USING (true);
 
 CREATE POLICY "Users can view own reading logs" ON public.reading_logs FOR SELECT USING (auth.uid() = profile_id);
 CREATE POLICY "Users can insert own reading logs" ON public.reading_logs FOR INSERT WITH CHECK (auth.uid() = profile_id);
@@ -67,9 +69,12 @@ BEGIN
   INSERT INTO public.profiles (id, full_name, role)
   VALUES (
     new.id,
-    new.raw_user_meta_data->>'full_name',
+    COALESCE(new.raw_user_meta_data->>'full_name', new.raw_user_meta_data->>'name', 'New User'),
     COALESCE(new.raw_user_meta_data->>'role', 'student')
-  );
+  )
+  ON CONFLICT (id) DO UPDATE SET
+    full_name = EXCLUDED.full_name,
+    role = EXCLUDED.role;
   RETURN new;
 END;
 $$ LANGUAGE plpgsql SECURITY DEFINER;
