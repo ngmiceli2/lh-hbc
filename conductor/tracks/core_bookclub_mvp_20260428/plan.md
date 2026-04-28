@@ -4,7 +4,7 @@
 - [x] Task: Project Initialisation [398615b]
     - [ ] Set up Vue.js project with TypeScript.
     - [ ] Configure Supabase project and client-side integration.
-- [ ] Task: Database Schema Definition
+- [~] Task: Database Schema Definition
     - [ ] Create `profiles` table for students and teachers.
     - [ ] Create `classes` table for managing student groups.
     - [ ] Create `books` table for cached book metadata.
